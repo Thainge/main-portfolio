@@ -1,0 +1,96 @@
+/* Center of page */
+
+.NotFoundBody {
+    position: relative;
+    overflow: hidden;
+    color: #878a8f;
+    height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------------------Fixed Images----------------------- */
+
+.fixed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 8;
+}
+
+.fixedDesign {
+    text-align: center;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 13vw;
+    font-weight: 700;
+    text-shadow: 2px 2px 100px rgb(230, 230, 230);
+    user-select: none;
+    transition: all .3s;
+
+}
+
+/* -----------------------Text-----------------------*/
+
+.NotFoundFlex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 9;
+}
+
+.headerFlex {
+    font-weight: 700;
+    font-size: 3em;
+    color: black;
+}
+
+.headerText {
+    margin-top: 1em;
+    max-width: 28em;
+}
+
+/* -----------------------Buttons-----------------------*/
+
+.BackButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.HomeLink {
+    margin-top: 1em;
+    margin-right: 2em;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    transition: all .5s;
+    padding-bottom: .1em;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+}
+
+.HomeLink:hover {
+    color: black;
+    border-color: black;
+}
+
+.ContactLink {
+    margin-top: 1em;
+    margin-right: 2em;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    transition: all .5s;
+    padding-bottom: .1em;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+}
+
+.ContactLink:hover {
+    color: black;
+    border-color: black;
+}

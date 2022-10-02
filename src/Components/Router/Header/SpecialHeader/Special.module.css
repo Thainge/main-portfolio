@@ -1,0 +1,137 @@
+/* -----------------------Menu Header----------------------- */
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.menuHeaderRight {
+    position: fixed;
+    top: 0;
+    right: 0;
+    user-select: none;
+    padding: 2em;
+    z-index: 1000;
+}
+
+.menuHeaderLeft {
+    position: fixed;
+    top: 0;
+    left: 0;
+    user-select: none;
+    padding: 2em;
+    z-index: 1000;
+}
+
+/* -----------------------Left Header----------------------- */
+
+.menuHeaderDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hiddenLink {
+    list-style: none;
+    text-decoration: none;
+}
+
+.HeaderText {
+    padding: 1em;
+}
+
+.circleImage {
+    width: 2.5em;
+    margin-right: .5em;
+    margin-top: .3em;
+    transition: all .5s;
+}
+
+.h2 {
+    font-size: 1.6em;
+    font-weight: 900;
+    transition: all .5s;
+}
+
+.h4 {
+    font-size: .7em;
+    letter-spacing: .3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+/* -----------------------Right Header----------------------- */
+
+.close {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.closeText {
+    font-size: .8em;
+    margin-right: .5em;
+    letter-spacing: .1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+/* -----------------------Header Icon----------------------- */
+.barsContainer {
+    display: inline-block;
+    transition: all .5s;
+}
+
+.change:hover {
+    transform: rotate(90deg);
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 1.5em;
+    height: .2em;
+    margin: .3em;
+    transition: all .5s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-.33em, .33em);
+    transform: rotate(-45deg) translate(-.33em, .33em);
+
+    width: 1.5em;
+    height: .2em;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-.33em, -.33em);
+    transform: rotate(45deg) translate(-.33em, -.33em);
+    width: 1.5em;
+    height: .2em;
+}
+
+/* -----------------------Media Queries-----------------------*/
+
+@media screen and (max-width: 900px) {
+    .menuHeaderFlex {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menuHeaderFlex {
+        padding: 1em;
+    }
+
+    .closeText {
+        display: none;
+    }
+}

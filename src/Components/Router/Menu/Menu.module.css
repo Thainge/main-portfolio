@@ -1,0 +1,86 @@
+/* -----------------------Menu-----------------------*/
+
+body {
+    overflow-y: scroll;
+}
+
+.menuContainer {
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    --overflow-hidden: hidden;
+}
+
+.h3 {
+    font-size: 1em;
+    letter-spacing: .2em;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menuLi {
+    list-style: none;
+    text-decoration: none;
+    font-size: 4em;
+    color: #878a8f;
+}
+
+.menuLink {
+    text-decoration: none;
+    font-style: normal;
+    color: #878a8f;
+    font-weight: 600;
+    transition: all .4s;
+}
+
+.menuLink:hover {
+    color: White;
+}
+
+.menuI::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: -40px;
+    top: -20px;
+    width: var(--menu-bar-width);
+    height: 5px;
+    background-color: white;
+    transition: all .4s;
+}
+
+.menuI:hover {
+    --menu-bar-width: 1em;
+}
+
+/* -----------------------Footer-----------------------*/
+
+.menuFooter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menuFooterText {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 640px) {
+    .menuLi {
+        font-size: 3em;
+    }
+
+    .menuI::before {
+        display: none;
+    }
+}

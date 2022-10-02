@@ -1,0 +1,13 @@
+.homeContainer {
+    margin-right: 13vw;
+    margin-left: 13vw;
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 1260px) {
+    .homeContainer {
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+}

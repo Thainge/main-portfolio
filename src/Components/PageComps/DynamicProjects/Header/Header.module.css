@@ -1,0 +1,119 @@
+.Projectsh1 {
+    line-height: 1.1em;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -.05em;
+    margin-bottom: .5em;
+    color: black;
+}
+
+.h3 {
+    color: #878a8f;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .3em;
+    margin-top: 2em;
+    margin-bottom: .5em;
+}
+
+.text {
+    font-size: 1.4em;
+    line-height: 1.3em;
+    color: #878a8f;
+    letter-spacing: normal;
+    margin-top: 1.5em;
+    max-width: 50em;
+}
+
+.textFlex {
+    display: flex;
+    align-items: center;
+}
+
+.views {
+    margin-left: .5em;
+}
+
+/* -----------------------Projects Styles----------------------- */
+
+.projectsHeaderContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.rightBox {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.leftBox {
+    min-width: 10em;
+    width: 100%;
+}
+
+.normalText {
+    font-weight: 700;
+    color: black;
+}
+
+.roleList {
+    list-style-type: none;
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 900px) {
+    .fillBackground {
+        padding-top: 25em;
+    }
+
+    .projectsHeaderContainer {
+        flex-direction: column;
+    }
+
+    .Projectsh1 {
+        font-size: 2.5em;
+        max-width: 15em;
+    }
+
+    .h3 {
+        font-size: .9em;
+    }
+
+    .text {
+        font-size: 1em;
+        max-width: 30em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Projectsh1 {
+        font-size: 2em;
+    }
+
+    .h3 {
+        font-size: .9em;
+    }
+
+    .text {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fillBackground {
+        padding-top: 26em;
+    }
+
+    .Projectsh1 {
+        font-size: 1.5em;
+    }
+
+    .h3 {
+        font-size: .8em;
+    }
+
+    .text {
+        font-size: .9em;
+    }
+}

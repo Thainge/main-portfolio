@@ -1,0 +1,222 @@
+/* -----------------------Global Home Styles----------------------- */
+
+.h1Home {
+    line-height: 1.1em;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.h3Home {
+    color: #878a8f;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .3em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.textHome {
+    font-size: 1.44em;
+    line-height: 1.3em;
+    color: #878a8f;
+    letter-spacing: normal;
+    margin-top: 1em;
+}
+
+.buttonLinkHome {
+    font-size: 1.1em;
+    font-weight: 900;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    transition: 500ms ease;
+}
+
+.buttonLinkHome:hover {
+    background-position: 0;
+    border-bottom: 1px solid black;
+}
+
+/* -----------------------Fixed Images----------------------- */
+
+.fixed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.fixedDesign {
+    text-align: center;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 22vw;
+    font-weight: 700;
+    user-select: none;
+    transition: all .3s;
+}
+
+/* Portrait Image */
+
+.fixedPortrait {
+    position: relative;
+    width: 45em;
+    height: 45em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: -20%;
+}
+
+/* -----------------------First Section----------------------- */
+
+.headerContainer {
+    margin-top: 25em;
+}
+
+.textContainer {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    max-width: 40em;
+}
+
+.grey {
+    color: #878a8f;
+    margin-right: 1em;
+    margin-left: 1em;
+    font-weight: 500;
+}
+
+/* Animated scroll button */
+
+.scrollContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollButton {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 1em;
+    width: 1.5em;
+    height: 2.5em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.scrollButton:hover {
+    border: 2px solid #878a8f;
+    --animated-scroll: #878a8f;
+}
+
+.circle {
+    background-color: var(--animated-scroll);
+    height: .45em;
+    border-radius: 5em;
+    animation: slidein infinite alternate .6s ease-in-out;
+    transition: all .3s;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(.3em)
+    }
+
+    to {
+        transform: translateY(-.3em)
+    }
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 1260px) {
+    .fixedPortrait {
+        width: 35em;
+        height: 35em;
+        margin-top: -10%;
+    }
+
+    .fixedDesign {
+        margin-top: .2em;
+    }
+
+    .fixedScroll {
+        display: none;
+    }
+
+    .fixedEmail {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .fixedPortrait {
+        width: 25em;
+        height: 25em;
+        margin-top: 12em;
+    }
+
+    .fixedDesign {
+        display: none;
+    }
+
+    .scrollContainer {
+        display: none;
+    }
+
+    .textContainer {
+        max-width: 50vw;
+    }
+
+    .headerContainer {
+        margin-top: 6em;
+    }
+
+    .largerLink {
+        font-size: 2.5em;
+    }
+
+    .h1Home {
+        font-size: 3em;
+    }
+
+    .h3Home {
+        font-size: .9em;
+    }
+
+    .textHome {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .fixedPortrait {
+        margin-top: 0em;
+    }
+
+    .headerContainer {
+        margin-top: 20em;
+    }
+
+    .textContainer {
+        max-width: 100vw;
+    }
+
+    .h1Home {
+        font-size: 3em;
+    }
+
+    .h3Home {
+        font-size: .9em;
+    }
+
+    .textHome {
+        font-size: 1em;
+    }
+}

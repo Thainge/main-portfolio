@@ -1,0 +1,11 @@
+/* -----------------------Contact Containers----------------------- */
+
+.contactSection {
+    margin-top: 11em;
+}
+
+@media screen and (max-width: 900px) {
+    .contactSection {
+        margin-top: 30em;
+    }
+}

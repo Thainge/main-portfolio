@@ -1,0 +1,79 @@
+/* -----------------------Map Background & Text----------------------- */
+
+.MapBackground {
+    width: 80vw;
+    height: auto;
+    max-height: 35em;
+    position: relative;
+    overflow: hidden;
+    background: #141922;
+    cursor: grab;
+}
+
+.MapTextContainer {
+    width: 80vw;
+    color: #bdbdbd;
+    top: -3.8em;
+    right: -3.3em;
+    font-size: 5em;
+    font-weight: 700;
+    position: relative;
+    pointer-events: none;
+}
+
+.MapLetters {
+    position: absolute;
+    width: 8em;
+    top: -2.6em;
+    right: 0;
+    z-index: 1;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1.5em);
+    text-transform: uppercase;
+}
+
+.MapLetters>i {
+    position: relative;
+    float: left;
+    display: block;
+    width: 8vw;
+    height: 1.8em;
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: #cfd0d2;
+    text-align: center;
+    font-style: normal;
+}
+
+.MapLetters>i:nth-child(5),
+.MapLetters>i:nth-child(6),
+.MapLetters>i:nth-child(7) {
+    color: white;
+}
+
+.MapLetters>i:nth-child(8) {
+    color: black;
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 1260px) {
+    .MapTextContainer {
+        width: 82vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .MapBackground {
+        width: 100%;
+        position: absolute;
+        z-index: -5;
+        top: 10em;
+        max-height: 15em;
+    }
+
+    .MapTextContainer {
+        display: none;
+    }
+}

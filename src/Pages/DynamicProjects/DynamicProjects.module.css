@@ -1,0 +1,23 @@
+/* -----------------------Projects Styles----------------------- */
+
+.SelectedProjectBox {
+    margin: 15em;
+    margin-top: 10em;
+    margin-bottom: 0;
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 1260px) {
+    .SelectedProjectBox {
+        margin-top: 7em;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .SelectedProjectBox {
+        margin-top: 5em;
+    }
+}

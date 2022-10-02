@@ -1,0 +1,205 @@
+/* -----------------------Global Home Styles----------------------- */
+
+.h1Home {
+    line-height: 1.1em;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.h3Home {
+    color: #878a8f;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .3em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.textHome {
+    font-size: 1.44em;
+    line-height: 1.3em;
+    color: #878a8f;
+    letter-spacing: normal;
+    margin-top: 1em;
+}
+
+.buttonLinkHome {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.1em;
+    font-weight: 900;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    color: black;
+    background: linear-gradient(to left, #363636, #363636 50%, #000000 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: 500ms ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.buttonLinkHome:hover {
+    background-position: 0;
+    border-bottom: 1px solid black;
+}
+
+/* -----------------------Projects Section----------------------- */
+
+.projectsContainer {
+    margin-top: 10em;
+    width: 100%;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.projectsGrid {
+    display: grid;
+    margin-top: 5em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto, auto);
+    grid-gap: 2em;
+}
+
+.project {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 43vw;
+    cursor: pointer;
+    transition: all .4s;
+    --display-value: none;
+}
+
+.project:hover {
+    box-shadow: inset 0 0 0 1000em rgba(0, 0, 0, .8);
+    --display-value: block;
+}
+
+.projectText {
+    padding: 2.5em;
+    max-width: 18em;
+}
+
+.projectDate {
+    color: #878a8f;
+    letter-spacing: .2em;
+    margin-bottom: 1em;
+}
+
+.projectHeader {
+    line-height: 1em;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    color: white;
+}
+
+.viewProject {
+    display: var(--display-value);
+    margin-top: 1em;
+}
+
+.noLinkStyles {
+    text-decoration: none;
+}
+
+/* Views */
+
+.textFlex {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.views {
+    margin-right: .5em;
+}
+
+/* View All Projects button */
+
+.projectButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.largerLink {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 1260px) {
+    .project {
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .projectsContainer {
+        margin-top: 2em;
+    }
+
+    .project {
+        font-size: calc(.8em + .1vw);
+    }
+
+    .projectButtonContainer {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .largerLink {
+        font-size: 2.5em;
+    }
+
+    .h1Home {
+        font-size: 3em;
+    }
+
+    .h3Home {
+        font-size: .9em;
+    }
+
+    .buttonLinkHome {
+        border-bottom: none;
+    }
+
+    .buttonLinkHome:hover {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .projectsGrid {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .project {
+        height: 130vw;
+        font-size: calc(.6em + 1vw);
+    }
+
+    .largerLink {
+        font-size: 2.5em;
+    }
+
+    .h1Home {
+        font-size: 3em;
+    }
+
+    .h3Home {
+        font-size: .9em;
+    }
+}

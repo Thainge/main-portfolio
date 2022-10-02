@@ -1,0 +1,17 @@
+/* -----------------------Slideshow----------------------- */
+
+.AboutSlideshowProjects {
+    border-bottom: 0px solid;
+    margin: 0;
+    padding: 0;
+    margin-top: 7em;
+    padding-bottom: 7em;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.ImageGalleryContainerProjects {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

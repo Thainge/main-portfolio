@@ -1,0 +1,69 @@
+/* -----------------------Load more button / Finished----------------------- */
+
+.finishedSection {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.projectButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.largerLink {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.FinishedText {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+/* -----------------------Global Home Styles----------------------- */
+
+.buttonLinkHome {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 900;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    color: black;
+    background: linear-gradient(to left, #363636, #363636 50%, #000000 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: 500ms ease;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.buttonLinkHome:hover {
+    background-position: 0;
+    border-bottom: 1px solid black;
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 900px) {
+    .largerLink {
+        font-size: 2em;
+    }
+
+    .buttonLinkHome {
+        border-bottom: none;
+    }
+
+    .buttonLinkHome:hover {
+        border-bottom: none;
+    }
+}

@@ -1,0 +1,53 @@
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+
+.TextLabel {
+    width: 48%;
+    color: #878a8f;
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Text Inputs */
+
+.TextInput {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: black;
+    border: none;
+    padding: 1em;
+    padding-left: 0;
+    padding-bottom: .3em;
+    border-bottom: 1px solid #dbdbdb;
+    transition: all .3s;
+}
+
+.TextInput::placeholder {
+    color: black;
+}
+
+.TextInput:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+/* -----------------------Media Queries----------------------- */
+
+@media screen and (max-width: 1260px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .TextLabel {
+        width: 100%;
+        margin-top: 4em;
+    }
+}
