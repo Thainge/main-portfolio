@@ -3,7 +3,6 @@ import styles from './Textarea.module.css';
 import Fade from 'react-reveal/Fade';
 import { ContextFunction } from '../../../../Context/ContextProvider';
 import ReactLoading from 'react-loading';
-import ReCAPTCHA from "react-google-recaptcha";
 
 function Textarea() {
     const obj = ContextFunction();
@@ -28,9 +27,6 @@ function Textarea() {
         )}px`;
     }, [formValues.Message]);
 
-    //site key for captcha
-    let siteKey = "6LffyGghAAAAAJgHm_V_mBfWZo-1IQoTvUB94ru-"
-
     return (
         <>
             {/* Message Text Area */}
@@ -39,14 +35,6 @@ function Textarea() {
                     Message *
                     <textarea onChange={onTextAreaChange} ref={textareaRef} value={formValues.Message} maxLength="2000" className={styles.TextArea} type="text" name="Message" placeholder={'What is your message?'} required />
                 </label>
-
-                {/* Captcha */}
-                <div>
-                    <ReCAPTCHA
-                        sitekey={siteKey}
-                        onChange={(e) => console.log(e)}
-                    />
-                </div>
 
                 {/* Submit Button */}
                 {

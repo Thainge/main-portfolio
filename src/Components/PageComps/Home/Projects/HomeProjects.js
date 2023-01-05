@@ -28,19 +28,43 @@ function HomeProjects({ ProjectsData }) {
                         // Shows first 8 projects from Projects array
                         FewerProjects.map((item, index) => (
                             <Fade up duration={800} distance={'2em'} key={index}>
-                                <Link to={`/projects/${item.route}`} className={styles.noLinkStyles}>
-                                    <div className={styles.imageContainer} >
-                                        <div className={styles.project} style={{ backgroundImage: `url("${item.img}")` }}>
-                                            <div className={styles.projectText}>
-                                                <div className={styles.projectDate}>{item.date}</div>
-                                                <div className={styles.projectHeader}>{item.header}</div>
-                                                <Fade duration={200} up>
-                                                    <div className={styles.viewProject}>View Projects ➜</div>
-                                                </Fade>
+                                {
+                                    item.link.includes('Android')
+                                        ? <Link to={`projects/${item.route}`} target="_blank" className={styles.noLinkStyles}>
+                                            <div className={styles.imageContainer} >
+                                                <div className={styles.project} style={{ backgroundImage: `url("${item.img}")` }}>
+                                                    <div className={styles.projectText}>
+                                                        <div className={styles.projectDate}>{item.date}</div>
+                                                        <div className={styles.projectHeader}>{item.header}</div>
+                                                        <div className={styles.projectUnder}>{item.underText}</div>
+                                                        <Fade duration={500} distance={'1em'} up>
+                                                            <div className={styles.viewProject}>Visit Website ➜</div>
+                                                            <p className={styles.projectPText}>
+                                                                {item.description}
+                                                            </p>
+                                                        </Fade>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </Link>
+                                        </Link>
+                                        : <a href={item.link} target="_blank" className={styles.noLinkStyles}>
+                                            <div className={styles.imageContainer} >
+                                                <div className={styles.project} style={{ backgroundImage: `url("${item.img}")` }}>
+                                                    <div className={styles.projectText}>
+                                                        <div className={styles.projectDate}>{item.date}</div>
+                                                        <div className={styles.projectHeader}>{item.header}</div>
+                                                        <div className={styles.projectUnder}>{item.underText}</div>
+                                                        <Fade duration={500} distance={'1em'} up>
+                                                            <div className={styles.viewProject}>Visit Website ➜</div>
+                                                            <p className={styles.projectPText}>
+                                                                {item.description}
+                                                            </p>
+                                                        </Fade>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                }
                             </Fade>
                         ))
                     }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './comments.module.css';
 import { CommentSection } from 'react-comments-section'
 import 'react-comments-section/dist/index.css'
@@ -14,16 +14,7 @@ function Comments() {
             avatarUrl: 'https://ui-avatars.com/api/name=Riya&background=random',
             userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
             text: 'Looks good.',
-            replies: [
-                {
-                    userId: '02b',
-                    comId: '017',
-                    fullName: 'Lily',
-                    userProfile: 'https://www.linkedin.com/in/riya-negi-8879631a9/',
-                    text: 'Yeah!',
-                    avatarUrl: 'https://ui-avatars.com/api/name=Lily&background=random',
-                    replies: []
-                }]
+            replies: []
         },
     ]
 

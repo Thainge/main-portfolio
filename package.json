@@ -16,12 +16,14 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "email-js": "^2.0.2",
+    "local-storage": "^2.0.0",
     "react": "^18.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-comments-section": "^2.0.10",
     "react-dom": "^18.2.0",
     "react-dropdown-now": "^6.0.1",
     "react-dropdown-select": "^4.9.0",
+    "react-flip-numbers": "^3.0.7",
     "react-ga": "^3.3.1",
     "react-google-recaptcha": "^2.1.0",
     "react-image-gallery": "^1.2.9",
@@ -30,6 +32,7 @@
     "react-loading": "^2.0.3",
     "react-pulse-dot": "^2.0.0",
     "react-recaptcha-google": "^1.1.1",
+    "react-rotating-text": "^1.4.1",
     "react-router-dom": "^6.3.0",
     "react-router-transition": "^2.1.0",
     "react-scripts": "5.0.1",
@@ -47,7 +50,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -68,6 +73,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-reveal": "^1.2.2"
   }
 }

@@ -20,8 +20,8 @@ function DynamicProjects({ project, currentIndex, ProjectsData }) {
 
     useEffect(() => {
         const AddView = databasePageCount + 1
-        setDatabasePageCount(AddView)
-        setViews(AddView)
+        setDatabasePageCount(AddView);
+        setViews(AddView);
     }, [])
 
     return (

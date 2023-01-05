@@ -1,6 +1,6 @@
 .LoaderBody {
     position: relative;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     color: #878a8f;
     background-color: #0f141e;

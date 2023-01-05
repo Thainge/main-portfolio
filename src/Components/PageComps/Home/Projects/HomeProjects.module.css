@@ -53,7 +53,7 @@
 /* -----------------------Projects Section----------------------- */
 
 .projectsContainer {
-    margin-top: 10em;
+    margin-top: 6em;
     width: 100%;
     border-bottom: 1px solid #c0c0c0;
 }
@@ -69,12 +69,14 @@
 .project {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: white;
     width: 100%;
     height: 43vw;
     cursor: pointer;
     transition: all .4s;
     --display-value: none;
+    border-radius: .5em;
 }
 
 .project:hover {
@@ -91,6 +93,12 @@
     color: #878a8f;
     letter-spacing: .2em;
     margin-bottom: 1em;
+}
+
+.projectUnder {
+    margin-top: .5em;
+    color: whitesmoke;
+    letter-spacing: .1em;
 }
 
 .projectHeader {
@@ -136,6 +144,14 @@
     margin: 0;
     font-size: 3em;
     font-weight: 800;
+}
+
+.projectHoverText {
+    display: var(--display-value);
+}
+
+.projectPText {
+    display: var(--display-value);
 }
 
 /* -----------------------Media Queries----------------------- */
