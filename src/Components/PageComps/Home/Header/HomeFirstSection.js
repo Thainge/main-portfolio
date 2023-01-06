@@ -51,6 +51,8 @@ function HomeFirstSection() {
                 setViews(newerViews);
                 ls.set('pageViewHome', newerViews);
             } else {
+                newerViews = newerViews + 1;
+                setViews(newerViews);
                 ls.set('pageViewHome', newerViews);
             }
         }, 1000);
