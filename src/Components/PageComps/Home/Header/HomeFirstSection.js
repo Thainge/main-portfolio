@@ -55,7 +55,7 @@ function HomeFirstSection() {
                 setViews(newerViews);
                 ls.set('pageViewHome', newerViews);
             }
-        }, 1000);
+        }, 1300);
 
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -105,7 +105,7 @@ function HomeFirstSection() {
                             showText ? <Fade distance={'1em'} up delay={100}><ReactRotatingText items={['Fullstack Developer', 'Website and user interface designer']} /></Fade> : <></>
                         }
                     </div>
-                    <Fade up delay={900}><div className={styles.textHome}>Over the past 2 years as a fullstack developer, I've worked with many clients to successfully help them reach their full potential and attract new customers.</div></Fade>
+                    <Fade up delay={900}><div className={styles.textHome}>Over the past 3 years as a fullstack developer, I've worked with many clients to successfully help them reach their full potential and attract new customers.</div></Fade>
                     <Fade up delay={1300} distance={'3em'}>
                         <div>
                             <button className={styles.buttonLinkHome} onClick={scrollToProjects}>View Projects</button>

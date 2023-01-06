@@ -11,7 +11,7 @@ function Clients({ brands }) {
                 <div className={styles.AboutHeader}>
                     <Fade up delay={100}><div className={styles.h3}>Clients</div></Fade>
                     <Fade up delay={200}><div className={styles.h1}>Some of the brands I’ve worked with</div></Fade>
-                    <Fade up delay={300}><div className={styles.text}>Over the past 2 years I’ve had the pleasure to work with customers from various sectors on many interesting projects.</div></Fade>
+                    <Fade up delay={300}><div className={styles.text}>Over the past 3 years I’ve had the pleasure to work with customers from various sectors on many interesting projects.</div></Fade>
                 </div>
                 <Fade up delay={400} distance={'5em'}>
                     <div className={styles.ClientImages}>

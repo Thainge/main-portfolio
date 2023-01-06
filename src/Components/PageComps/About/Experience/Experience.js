@@ -9,7 +9,7 @@ function Experience({ JsonData }) {
             {/* Experience */}
             <div className={styles.AboutChildContainer}>
                 <div className={styles.AboutHeader}>
-                    <Fade up delay={100}><div className={styles.h3}>Over 2 years of experience</div></Fade>
+                    <Fade up delay={100}><div className={styles.h3}>Over 3 years of experience</div></Fade>
                     <Fade up delay={200}><div className={styles.h1}>Experience</div></Fade>
                     <Fade up delay={300}><div className={styles.text}>I have been lucky enough to meet with a wide variety of clients from all over the world. Through me they are able to build the application they want and I help them to connect to their audience on the platform they desire.</div></Fade>
                 </div>

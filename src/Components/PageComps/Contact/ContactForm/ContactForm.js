@@ -26,7 +26,6 @@ function ContactForm({ JsonData }) {
                         <div className={styles.textContact}>Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.</div>
                         <form className={styles.contactFormContainer} onSubmit={handleSubmit} ref={form}>
                             <Checkboxes data={JsonData} />
-                            <DropDown data={JsonData} />
                             <Textarea data={JsonData} />
                         </form>
                     </div>

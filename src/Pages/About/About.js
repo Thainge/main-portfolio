@@ -15,27 +15,6 @@ function About() {
         {
             src: require('./../../assets/brand.png'),
         },
-        {
-            src: require('./../../assets/brand.png'),
-        },
-        {
-            src: require('./../../assets/brand.png'),
-        },
-        {
-            src: require('./../../assets/brand.png'),
-        },
-        {
-            src: require('./../../assets/brand.png'),
-        },
-        {
-            src: require('./../../assets/brand.png'),
-        },
-        {
-            src: require('./../../assets/brand.png'),
-        },
-        {
-            src: require('./../../assets/brand.png'),
-        },
     ];
 
     // All slideshow images
@@ -59,7 +38,7 @@ function About() {
                 <SlideShow images={images} />
                 <ServicesTools JsonData={AboutData} />
                 <Experience JsonData={AboutData} />
-                <Clients brands={brands} />
+                {/* <Clients brands={brands} /> */}
             </div>
             <NeedDesigner />
         </>
