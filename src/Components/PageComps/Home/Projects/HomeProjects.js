@@ -42,6 +42,11 @@ function HomeProjects({ ProjectsData }) {
                                                             <p className={styles.projectPText}>
                                                                 {item.description}
                                                             </p>
+                                                            <ul className={styles.ul}>
+                                                                {item.tags.map((item, index) => (
+                                                                    <li className={styles.li}>{item}</li>
+                                                                ))}
+                                                            </ul>
                                                         </Fade>
                                                     </div>
                                                 </div>
@@ -59,6 +64,11 @@ function HomeProjects({ ProjectsData }) {
                                                             <p className={styles.projectPText}>
                                                                 {item.description}
                                                             </p>
+                                                            <ul className={styles.ul}>
+                                                                {item.tags.map((item, index) => (
+                                                                    <li className={styles.li}>{item}</li>
+                                                                ))}
+                                                            </ul>
                                                         </Fade>
                                                     </div>
                                                 </div>

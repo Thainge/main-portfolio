@@ -2,7 +2,8 @@ const ProjectsData = [
     {
         "link": "https://thainge.github.io/movies-games-books/",
         "route": "MoviesGamesBooks",
-        "description": 'Fullstack application using ReactJS, NodeJS, and MongoDB. Also uses TMDB API, IMDB API, Steamworks API, and the Google Books API.',
+        "tags": ["TMDB API", "IMDB API", "Steamworks API", "Google Books API", "MongoDB"],
+        "description": 'Fullstack application which allows users to create and share customizable libraries of movies, games, and books.',
         "name": "Movies Games Books",
         "underText": 'Fullstack',
         "client": "Intertek",
@@ -64,6 +65,7 @@ const ProjectsData = [
     {
         "link": "https://thainge.github.io/card-kingdom/",
         "route": "CardKingdom",
+        "tags": ["Sockets.Io", "Multiplayer"],
         "description": 'Card game made from ReactJS and NodeJS sockets for multiplayer.',
         "name": "Card Kingdom React App",
         "underText": 'Frontend / Server',
@@ -123,12 +125,13 @@ const ProjectsData = [
     {
         "link": "AndroidChatApp",
         "route": "AndroidChatApp",
-        "description": 'Android/IOS chatting application, uses NodeJS for the server and MongoDB for the backend.',
-        "name": "Android/IOS Chat Application",
-        "underText": 'Android/IOS Chat Application',
+        "tags": ["MongoDB", "Android"],
+        "description": 'Android chatting app built using Flutter.',
+        "name": "Android Chat Application",
+        "underText": 'Android Chat Application',
         "client": "Personal",
         "date": "2022",
-        "header": "Android/IOS Chat Application",
+        "header": "Android Chat Application",
         "text": [
             {
                 "p": "Built using the Flutter Programming language, a fullstack chatting app to communicate with others! Fullstack Android/IOS application with smooth and responsive user interfaces. Chatting app that connects to NodeJS and uses MongoDB for the backend."
@@ -173,7 +176,8 @@ const ProjectsData = [
     {
         "link": "https://thainge.github.io/home/",
         "route": "CustomNewTab",
-        "description": 'Custom new tab page, uses Google\'s favicon API and DuckDuckGo\'s search engine.',
+        "tags": ["Google Favicon API"],
+        "description": 'Custom new tab page using the DuckDuckGo search engine.',
         "name": "Custom New Tab",
         "underText": 'Frontend',
         "client": "Personal",
