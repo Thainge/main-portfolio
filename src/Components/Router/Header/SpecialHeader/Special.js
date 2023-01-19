@@ -32,7 +32,7 @@ function SpecialHeader() {
             {/* Menu Header */}
             <div className={styles.menuHeaderLeft}>
                 {/* Menu Text and Icon */}
-                <Link onClick={() => setCloseIcon(false)} className={styles.hiddenLink} to={""}>
+                <Link onClick={() => setCloseIcon(false)} className={styles.hiddenLink} to={"/"}>
                     <div className={styles.menuHeaderDiv} style={belowTen ? { color: '#fff' } : { color: 'black' }}>
                         <img className={styles.circleImage} src={require(belowTen ? './../../../../assets/lightLastName.png' : './../../../../assets/lastName.png')}></img>
                         <div className={styles.headerText}>

@@ -1,64 +1,55 @@
 const ProjectsData = [
     {
-        "link": "https://thainge.github.io/movies-games-books/",
-        "route": "MoviesGamesBooks",
-        "tags": ["TMDB API", "IMDB API", "Steamworks API", "Google Books API", "MongoDB"],
-        "description": 'Fullstack application which allows users to create and share customizable libraries of movies, games, and books.',
-        "name": "Movies Games Books",
-        "underText": 'Fullstack',
-        "client": "Intertek",
-        "date": "2022",
-        "header": "Movies Games Books",
+        "link": "https://thainge.github.io/simply-chiro/#/",
+        "route": "SimplyChiro",
+        "tags": ["Fullstack", "MongoDB", "User Roles", "Appointment Scheduler"],
+        "description": 'Fullstack chiropractic website, schedule appointments online!',
+        "name": "Simply Chiro",
+        "underText": 'Fullstack Appointment Scheduler',
+        "client": "Simply Chiro",
+        "date": "2023",
+        "header": "Simply Chiro",
         "text": [
             {
-                "p": "Fullstack online library application which allows users to login and create their own libraries of movies, games, and books that can be shared with others. Uses ReactJS for frontend, NodeJS for server side functions, and MongoDB for the backend. Uses an API created by myself to query all information on the server, and google sign on to make user authentication smooth. Multiple APIs were also used to make this user friendly, the IMDB API, TMDB API, Steamworks API, and the Google Books API."
+                "p": "Online appointment scheduling software for Dr.Atkin's patients. Appointments can be booked and managed online with the patient dashboard, including an admin panel for Dr.Atkins to manage all appointment info, availability, and coupon codes."
             },
-            {
-                "p": "The movies section allows you to create your own movie libraries, upload a folder of movies to a movies collection and it will pull all possibly information from TMDB API and IMDB API and display it in your library. This includes posters, background images, titles, descriptions, ratings, and other information."
-            },
-            {
-                "p": "The games section allows you to create your own game libraries, create a collection and as you type it will do queries to display relevent games information found from the Steamworks API. Once a list of games have been chosen it will then use the Steamworks API to pull all information from the games and display them in your library of games."
-            },
-            {
-                "p": "The games section allows you to create your own book libraries, create a collection and it will allow you to search all books found using the Google Books API, results returned in JSON allows information to be pulled and added to your collection of books."
-            }
         ],
         "roles": [
             {
                 "role": "Fullstack Development"
             },
             {
+                "role": "Scheduling Software"
+            },
+            {
                 "role": "Authentication"
             },
             {
                 "role": "UX / UI"
-            },
-            {
-                "role": "APIs"
-            },
+            }
         ],
-        "img": require('./../assets/projects/Project2/ProjectHeader.png'),
+        "img": require('./../assets/projects/Project3/ProjectHeader.png'),
         "images": [
             {
-                "original": require('./../assets/projects/Project2/ProjectImage1.png')
+                "original": require('./../assets/projects/Project3/ProjectImage1.png')
             },
             {
-                "original": require('./../assets/projects/Project2/ProjectImage2.png')
+                "original": require('./../assets/projects/Project3/ProjectImage2.png')
             },
             {
-                "original": require('./../assets/projects/Project2/ProjectImage3.png')
+                "original": require('./../assets/projects/Project3/ProjectImage3.png')
             },
             {
-                "original": require('./../assets/projects/Project2/ProjectImage4.png')
+                "original": require('./../assets/projects/Project3/ProjectImage4.png')
             },
             {
-                "original": require('./../assets/projects/Project2/ProjectImage5.png')
+                "original": require('./../assets/projects/Project3/ProjectImage5.png')
             },
             {
-                "original": require('./../assets/projects/Project2/ProjectImage6.png')
+                "original": require('./../assets/projects/Project3/ProjectImage6.png')
             },
             {
-                "original": require('./../assets/projects/Project2/ProjectImage7.png')
+                "original": require('./../assets/projects/Project3/ProjectImage7.png')
             },
         ]
     },
@@ -123,27 +114,30 @@ const ProjectsData = [
         ]
     },
     {
-        "link": "AndroidChatApp",
-        "route": "AndroidChatApp",
-        "tags": ["MongoDB", "Android"],
-        "description": 'Android chatting app built using Flutter.',
-        "name": "Android Chat Application",
-        "underText": 'Android Chat Application',
-        "client": "Personal",
+        "link": "https://thainge.github.io/movies-games-books/",
+        "route": "MoviesGamesBooks",
+        "tags": ["TMDB API", "IMDB API", "Steamworks API", "Google Books API", "MongoDB"],
+        "description": 'Fullstack application which allows users to create and share customizable libraries of movies, games, and books.',
+        "name": "Movies Games Books",
+        "underText": 'Fullstack',
+        "client": "Intertek",
         "date": "2022",
-        "header": "Android Chat Application",
+        "header": "Movies Games Books",
         "text": [
             {
-                "p": "Built using the Flutter Programming language, a fullstack chatting app to communicate with others! Fullstack Android/IOS application with smooth and responsive user interfaces. Chatting app that connects to NodeJS and uses MongoDB for the backend."
+                "p": "Fullstack online library application which allows users to login and create their own libraries of movies, games, and books that can be shared with others. Uses ReactJS for frontend, NodeJS for server side functions, and MongoDB for the backend. Uses an API created by myself to query all information on the server, and google sign on to make user authentication smooth. Multiple APIs were also used to make this user friendly, the IMDB API, TMDB API, Steamworks API, and the Google Books API."
             },
             {
-                "p": "Ability to add friends, search for friends, hold private conversations with friends, join public group chats, and servers with rooms. Next steps is to hook up voice communication for group voice chats and private voice communication"
+                "p": "The movies section allows you to create your own movie libraries, upload a folder of movies to a movies collection and it will pull all possibly information from TMDB API and IMDB API and display it in your library. This includes posters, background images, titles, descriptions, ratings, and other information."
             },
+            {
+                "p": "The games section allows you to create your own game libraries, create a collection and as you type it will do queries to display relevent games information found from the Steamworks API. Once a list of games have been chosen it will then use the Steamworks API to pull all information from the games and display them in your library of games."
+            },
+            {
+                "p": "The games section allows you to create your own book libraries, create a collection and it will allow you to search all books found using the Google Books API, results returned in JSON allows information to be pulled and added to your collection of books."
+            }
         ],
         "roles": [
-            {
-                "role": "Android Development"
-            },
             {
                 "role": "Fullstack Development"
             },
@@ -152,24 +146,33 @@ const ProjectsData = [
             },
             {
                 "role": "UX / UI"
-            }
+            },
+            {
+                "role": "APIs"
+            },
         ],
-        "img": require('./../assets/projects/Project3/ProjectHeader.png'),
+        "img": require('./../assets/projects/Project2/ProjectHeader.png'),
         "images": [
             {
-                "original": require('./../assets/projects/Project3/ProjectImage1.png')
+                "original": require('./../assets/projects/Project2/ProjectImage1.png')
             },
             {
-                "original": require('./../assets/projects/Project3/ProjectImage2.png')
+                "original": require('./../assets/projects/Project2/ProjectImage2.png')
             },
             {
-                "original": require('./../assets/projects/Project3/ProjectImage3.png')
+                "original": require('./../assets/projects/Project2/ProjectImage3.png')
             },
             {
-                "original": require('./../assets/projects/Project3/ProjectImage4.png')
+                "original": require('./../assets/projects/Project2/ProjectImage4.png')
             },
             {
-                "original": require('./../assets/projects/Project3/ProjectImage5.png')
+                "original": require('./../assets/projects/Project2/ProjectImage5.png')
+            },
+            {
+                "original": require('./../assets/projects/Project2/ProjectImage6.png')
+            },
+            {
+                "original": require('./../assets/projects/Project2/ProjectImage7.png')
             },
         ]
     },

@@ -13,7 +13,7 @@ function Header() {
             {/* Menu Header */}
             <div className={styles.menuHeaderLeft}>
                 {/* Menu Text and Icon */}
-                <Link onClick={() => setCloseIcon(false)} className={styles.hiddenLink} to={""}>
+                <Link onClick={() => setCloseIcon(false)} className={styles.hiddenLink} to={"/"}>
                     <div className={styles.menuHeaderDiv} style={closeIcon ? { color: '#878a8f' } : { color: 'black' }}>
                         <img className={styles.circleImage} src={require(closeIcon ? './../../../assets/menuLastName.png' : './../../../assets/lastName.png')}></img>
                         <div className={styles.headerText}>

@@ -1,34 +1,20 @@
-Fully animated portfolio app.
+# Tobey Hainge Portfolio
 
-Folder Structure:
+[Portfolio Website](https://thainge.github.io/main-portfolio/#/)
 
-root/assets // images
-root/json // json data
-root/context // context
+Personal project's portfolio, holds all of my development projects, with links and details about each project.
 
-root/pages
-// all pages, each page is broken down into components 
-root/pages/Home // home page
-root/pages/Projects // search all projects page
-root/pages/Contact // contact page
-root/pages/About // about page
-root/pages/DynamicProjects // dynamic project view page
-root/pages/PageNotFound // page not found page
+## Development Explanation
+### Data Modeling
+- Page Views, database which holds total page view count.
+### Server Queries
+- An API query for updating page view count.
+- API query for submitting form and sending an email to me.
+### Web Pages
+- Home
+- About
+- Contact
+- All Projects
+- Single Project
 
-root/components/PageComps
-// All components for each page, organized
-Home // organized inside
-Projects // organized inside
-Contact // organized inside
-About // organized inside
-DynamicProjects // organized inside
-
-root/Router
-root/Router/RouterComponent.js // Starting point for app, all routes go through here
-// All commonly used components
-root/Router/Header // absolute header at top of each page
-root/Router/Footer // absolute footer at bottom of each page
-root/Router/FixedScroller // fixed scroller + email icon for each page
-root/Router/NeedDesigner // custom extra footer for home and about
-root/Router/Menu // sliding menu component
-root/Router/Loader // loading screen
+CopyRight 2022 Tobey Hainge
