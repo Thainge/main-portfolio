@@ -56,6 +56,10 @@
     margin-top: 6em;
     width: 100%;
     border-bottom: 1px solid #c0c0c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .projectsGrid {
@@ -64,6 +68,8 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(auto, auto);
     grid-gap: 2em;
+    width: 90%;
+    max-width: 80em;
 }
 
 .project {
